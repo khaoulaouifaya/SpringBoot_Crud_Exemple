@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+<br><br>
+  <h2 >update this student:</h2>
+ <br > 
+ <form th:action="@{/students/addStudent}" method="post" th:object="${student}">
+  <div class="form-group">
+  <input type="hidden" class="form-control" th:field="*{id}" value="${student.id}" aria-describedby="emailHelp" placeholder="Enter email"  >
+  </div>
+     <div class="form-group">
+    <label for="exampleInputEmail1">name</label>
+    <input type="text" class="form-control" th:field="*{nom}"  aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">laste name</label>
+    <input type="text" class="form-control" th:field="*{prenom}"  placeholder="Password">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">update</button>
+</form>
+ 
+ 
+ 
+ 
+  <a href="retour">retourner a la page principale</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+</body>
+</html>

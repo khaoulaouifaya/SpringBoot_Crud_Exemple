@@ -1,0 +1,15 @@
+server:
+ port: 8090
+ servlet:
+  context-path: /frontEndApp
+spring:
+ datasource:
+  driver-class-name: oracle.jdbc.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521/XE
+  username: system
+  password: 123  
+jpa:
+ show_sql: true
+ generate-ddl: true
+ hibernate:
+  ddl-auto: update

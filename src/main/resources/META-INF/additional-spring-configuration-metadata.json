@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "jpa.show_sql",
+    "type": "java.lang.String",
+    "description": "A description for 'jpa.show_sql'"
+  },
+  {
+    "name": "jpa.generate-ddl",
+    "type": "java.lang.String",
+    "description": "A description for 'jpa.generate-ddl'"
+  },
+  {
+    "name": "jpa.hibernate.ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'jpa.hibernate.ddl-auto'"
+  }
+]}
